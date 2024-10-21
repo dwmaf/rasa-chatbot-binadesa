@@ -1,27 +1,16 @@
 version: "3.1"
 
 rules:
-- rule: Say goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
 
-- rule: Respond to KK requirements question
-  steps:
-  - intent: ask_kk_requirements
-  - action: utter_ask_kk_requirements
-
-- rule: Respond to KTP requirements question
-  steps:
-  - intent: ask_ktp_requirements
-  - action: utter_ask_ktp_requirements
-
-- rule: Respond to SKCK requirements question
-  steps:
-  - intent: ask_skck_requirements
-  - action: utter_ask_skck_requirements
-
-- rule: Respond to bot challenge
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+  - rule: Respond to ask_skck_requirements
+    steps:
+      - intent: ask_skck_requirements
+      - action: utter_skck_requirements

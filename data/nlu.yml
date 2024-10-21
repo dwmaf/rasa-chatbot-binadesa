@@ -6,41 +6,93 @@ nlu:
     - hey
     - hello
     - hi
-    - selamat pagi
-    - selamat sore
-    - selamat malam
-    - assalamualaikum
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
 
 - intent: goodbye
   examples: |
-    - terima kasih
-    - sampai jumpa
-    - selamat tinggal
+    - cu
+    - good by
+    - cee you later
+    - good night
     - bye
-    - sampai nanti
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
 
-- intent: ask_kk_requirements
+- intent: affirm
   examples: |
-    - Apa saja syarat untuk membuat Kartu Keluarga?
-    - Bagaimana cara membuat KK baru?
-    - Syarat pembuatan Kartu Keluarga apa saja?
-    - Apa saja dokumen untuk KK?
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
 
-- intent: ask_ktp_requirements
+- intent: deny
   examples: |
-    - Bagaimana cara mengurus KTP?
-    - Apa saja syarat untuk membuat KTP?
-    - Syarat pembuatan KTP apa saja?
-    - KTP baru apa saja syaratnya?
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
 
-- intent: ask_skck_requirements
+- intent: mood_great
   examples: |
-    - Bagaimana cara mengurus SKCK?
-    - Apa saja syarat untuk membuat SKCK?
-    - SKCK baru apa saja syaratnya?
-    - Syarat pembuatan SKCK apa saja?
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
 
 - intent: bot_challenge
   examples: |
-    - Apakah kamu bot?
-    - Kamu manusia atau mesin?
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_skck_requirements
+  examples: |
+    - apa persyaratan pembuatan SKCK?
+    - apa saja syarat membuat SKCK?
+    - bagaimana cara membuat SKCK?
+    - dokumen apa yang dibutuhkan untuk membuat SKCK?
