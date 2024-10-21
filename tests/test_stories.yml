@@ -1,0 +1,69 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: greet and ask about KK requirements
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      Apa saja syarat untuk membuat Kartu Keluarga?
+    intent: ask_kk_requirements
+  - action: utter_ask_kk_requirements
+
+- story: greet and ask about KTP requirements
+  steps:
+  - user: |
+      halo
+    intent: greet
+  - action: utter_greet
+  - user: |
+      Apa saja syarat untuk membuat KTP?
+    intent: ask_ktp_requirements
+  - action: utter_ask_ktp_requirements
+
+- story: greet and ask about SKCK requirements
+  steps:
+  - user: |
+      hai
+    intent: greet
+  - action: utter_greet
+  - user: |
+      Apa saja syarat untuk membuat SKCK?
+    intent: ask_skck_requirements
+  - action: utter_ask_skck_requirements
+
+- story: greet and say goodbye
+  steps:
+  - user: |
+      halo
+    intent: greet
+  - action: utter_greet
+  - user: |
+      sampai jumpa
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: user challenges bot
+  steps:
+  - user: |
+      Apakah kamu bot?
+    intent: bot_challenge
+  - action: utter_iamabot
+
+- story: complete conversation (greet -> KK -> goodbye)
+  steps:
+  - user: |
+      selamat pagi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      Bagaimana cara membuat KK baru?
+    intent: ask_kk_requirements
+  - action: utter_ask_kk_requirements
+  - user: |
+      terima kasih
+    intent: goodbye
+  - action: utter_goodbye

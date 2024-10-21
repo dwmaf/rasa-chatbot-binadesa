@@ -1,0 +1,32 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_kk_requirements
+  - ask_ktp_requirements
+  - ask_skck_requirements
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Halo! Ada yang bisa saya bantu seputar administrasi desa?"
+
+  utter_goodbye:
+  - text: "Terima kasih telah menghubungi kami. Sampai jumpa!"
+
+  utter_ask_kk_requirements:
+    - text: "Syarat pembuatan Kartu Keluarga: 1. Fotokopi KTP suami istri, 2. Fotokopi buku nikah, 3. Surat keterangan pindah (jika pindah desa), 4. Formulir permohonan KK dari desa."
+
+  utter_ask_ktp_requirements:
+    - text: "Syarat pembuatan KTP: 1. Fotokopi KK, 2. Surat keterangan pindah (jika pindah desa), 3. Formulir permohonan KTP dari desa."
+
+  utter_ask_skck_requirements:
+    - text: "Syarat pembuatan SKCK: 1. Fotokopi KTP, 2. Fotokopi KK, 3. Surat pengantar dari RT/RW, 4. Foto 4x6 (6 lembar), 5. Formulir permohonan SKCK dari desa."
+
+  utter_iamabot:
+    - text: "Saya adalah bot yang membantu menjawab pertanyaan administrasi desa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

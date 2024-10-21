@@ -1,0 +1,46 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - selamat pagi
+    - selamat sore
+    - selamat malam
+    - assalamualaikum
+
+- intent: goodbye
+  examples: |
+    - terima kasih
+    - sampai jumpa
+    - selamat tinggal
+    - bye
+    - sampai nanti
+
+- intent: ask_kk_requirements
+  examples: |
+    - Apa saja syarat untuk membuat Kartu Keluarga?
+    - Bagaimana cara membuat KK baru?
+    - Syarat pembuatan Kartu Keluarga apa saja?
+    - Apa saja dokumen untuk KK?
+
+- intent: ask_ktp_requirements
+  examples: |
+    - Bagaimana cara mengurus KTP?
+    - Apa saja syarat untuk membuat KTP?
+    - Syarat pembuatan KTP apa saja?
+    - KTP baru apa saja syaratnya?
+
+- intent: ask_skck_requirements
+  examples: |
+    - Bagaimana cara mengurus SKCK?
+    - Apa saja syarat untuk membuat SKCK?
+    - SKCK baru apa saja syaratnya?
+    - Syarat pembuatan SKCK apa saja?
+
+- intent: bot_challenge
+  examples: |
+    - Apakah kamu bot?
+    - Kamu manusia atau mesin?

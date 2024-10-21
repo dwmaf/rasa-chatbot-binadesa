@@ -1,0 +1,28 @@
+version: "3.1"
+
+stories:
+- story: user asks about KK
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_kk_requirements
+  - action: utter_ask_kk_requirements
+
+- story: user asks about KTP
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_ktp_requirements
+  - action: utter_ask_ktp_requirements
+
+- story: user asks about SKCK
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_skck_requirements
+  - action: utter_ask_skck_requirements
+
+- story: user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
