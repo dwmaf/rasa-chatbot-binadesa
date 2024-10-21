@@ -36,9 +36,9 @@ nlu:
 - intent: ask_skck_requirements
   examples: |
     - dokumen apa yang dibutuhkan untuk membuat SKCK?
-  - bagaimana cara membuat SKCK?
-  - apa persyaratan pembuatan SKCK?
-  - Bagaimana cara mengurus SKCK?
+    - bagaimana cara membuat SKCK?
+    - apa persyaratan pembuatan SKCK?
+    - Bagaimana cara mengurus SKCK?
     - Apa saja syarat untuk membuat SKCK?
     - SKCK baru apa saja syaratnya?
     - Syarat pembuatan SKCK apa saja?
